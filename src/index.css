@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sidebar-icon {
+        @apply drop-shadow-2xl relative flex items-center justify-center h-20 w-20 mt-6 mb-2 mx-auto bg-dark-3 p-5 rounded-2xl hover:bg-red transition-all duration-150 ease-linear cursor-pointer text-red hover:text-light;
+    };
+    .sidebar-tooltip {
+        @apply drop-shadow-2xl absolute w-auto p-2 m-2 min-w-max left-20 rounded-sm text-light bg-dark-3 text-lg font-bold transition-all duration-75 scale-0 origin-left;
+    };
+    .input-auth {
+        @apply outline-none w-80 mx-3 my-2 h-7 p-5 rounded-md bg-dark-1 text-lg text-light;
+    };
+    .button-uni {
+        @apply text-lg text-light bg-red border-4 border-red max-w-min p-2 px-4 rounded-lg hover:bg-white hover:text-red cursor-pointer transition-all duration-150 ease-out;
+    };
+    .backpage {
+        @apply flex pl-48 bg-dark-3 h-screen w-screen text-light;
+    }
+}
